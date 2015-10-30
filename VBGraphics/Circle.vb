@@ -1,23 +1,23 @@
 ﻿Public Class Circle
 
     'public Property Form As Form
-Public Sub DrawCircle(xd As Integer, yd As Integer, r As integer, color As Color, form As Form)
+    Public Sub DrawCircle(xd As Integer, yd As Integer, r As Integer, color As Color, form As Form)
 
 
-    'form.ForeColor = color
-    Dim x As Integer
-    Dim y As Integer
-    
-    Dim th As Double
-    
-    For i = 1 To 200
-    
-        th = i * 3.14 / 100
-        'Print th
-        
-        
-        x = Math.Sin(th) * r
-        y = Math.cos(th) * r
+        'form.ForeColor = color
+        Dim x As Integer = 0
+        Dim y As Integer = 0
+
+        Dim th As Double = 0.0
+
+        For i = 1 To 200
+
+            th = i * 3.14 / 100
+            'Print th
+
+
+            x = Math.Sin(th) * r
+            y = Math.Cos(th) * r
 
             Dim g = form.CreateGraphics()
 
@@ -33,9 +33,9 @@ Public Sub DrawCircle(xd As Integer, yd As Integer, r As integer, color As Color
             '    xd + x, yd + y, 
             '    xd + x, yd + y)
 
-        'Debug.Print(x.ToString())
-        
-    Next i
+            'Debug.Print(x.ToString())
 
-End Sub
+        Next i
+
+    End Sub
 End Class
